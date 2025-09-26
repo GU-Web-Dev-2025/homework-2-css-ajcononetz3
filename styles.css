@@ -1,3 +1,9 @@
+/* 
+    AJ Cononetz
+    CPSC 332: Web Development
+    Homework 2 - CSS
+    Last Modified: 9/25/25
+*/
 /* Main flex container */
 #flex-container {
     display: flex;
@@ -11,6 +17,9 @@ body {
 
 /* Site header and nav */
 .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #0f172a;
     padding: 1rem;
 }
@@ -29,6 +38,13 @@ body {
     background: #dcebfe38;
     outline: none;
     border-radius: 4px;
+}
+.site-logo {
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-right: 2rem;
+    margin-left: 1rem;
 }
 
 /* Profile side */
@@ -57,6 +73,16 @@ body {
 .title {
     text-align: center;
     color: #0f172a;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #0f172a;
+    margin: 2rem auto -0.5rem;
+    border-radius: 2px;
 }
 
 
@@ -91,7 +117,7 @@ body {
 
 .style-table th {
     background-color: #0f172a;
-    color: #dbeafe;
+    color: white;
     padding: 0.5rem 0.5rem;
     vertical-align: top;
     font-size: 0.85rem;
