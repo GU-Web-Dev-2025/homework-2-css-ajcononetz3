@@ -1,0 +1,31 @@
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.header {
+    background-color: grey;
+}
+
+.profile {
+    background-color: lightgreen;
+    flex: 0 1 30%;
+}
+
+.main {
+    background-color: lightskyblue;
+    flex: 0 1 70%;
+}
+
+.profile-figure {
+    display: flex;
+    justify-content: center;
+}
+
+#profile-img {
+    border-radius: 8px;
+    border-radius:50%;
+    width: 100px;
+    border:4px solid #0f172a;
+}
