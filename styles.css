@@ -1,21 +1,54 @@
+/* Main flex container */
 #flex-container {
     display: flex;
     flex-direction: row;
     height: auto;
 }
 
-.header {
-    background-color: grey;
+/* Site header and nav */
+.site-header {
+    background: #0f172a;
+    padding: 1rem;
+}
+.site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.site-nav a {
+    color: #dbeafe;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: 0.2s ease;
+}
+.site-nav a:hover, .site-nav a:focus {
+    background: #dcebfe38;
+    outline: none;
+    border-radius: 4px;
 }
 
+/* Profile side */
 .profile {
     background-color: lightgreen;
     flex: 0 1 30%;
+    padding: 1rem;
 }
 
+.name {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: #0f172a;
+}
+
+
+/* Main info side */
 .main {
     background-color: lightskyblue;
     flex: 0 1 70%;
+    padding: 1rem;
 }
 
 .profile-figure {
